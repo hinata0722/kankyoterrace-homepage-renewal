@@ -400,7 +400,10 @@ a { color: inherit; }
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: clamp(150px, 40vh, 220px) var(--kt-gutter) 80px;
+    padding: clamp(46px, 10vh, 80px) var(--kt-gutter) 72px;
+  }
+  .kt-hero__actions {
+    margin-top: clamp(60px, 8vw, 80px);
   }
   .kt-hero__place,
   .kt-hero__title,
