@@ -378,7 +378,7 @@ a { color: inherit; }
 @media (max-width: 899px) {
   .kt-hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     padding-top: var(--kt-header-h);
