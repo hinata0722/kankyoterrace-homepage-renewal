@@ -18,8 +18,8 @@ add_action('wp_enqueue_scripts', function() {
 	$timestamp = date( 'Ymdgis', filemtime( get_stylesheet_directory() . '/style.css' ) );
 	wp_enqueue_style( 'child_style', get_stylesheet_directory_uri() .'/style.css', [], $timestamp );
 
-	// リニューアル用トップページのみに CSS・JS を読み込み
-	if ( is_page() && in_array( get_the_ID(), array( get_option( 'page_for_posts' ), get_option( 'page_on_front' ) ) ) || ( is_page() && get_the_title() === 'ホーム（新）' ) ) {
+	// page-renewal.php テンプレート用の CSS・JS を読み込み
+	if ( is_page() && get_page_template_slug() === 'page-renewal.php' ) {
 
 		// Google Fonts の読み込み
 		wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@500;600&display=swap' );
