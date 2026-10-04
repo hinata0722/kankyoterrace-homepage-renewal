@@ -1,0 +1,321 @@
+<?php
+/**
+ * Template for renewal page
+ */
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php wp_title(); ?></title>
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
+
+	<a class="kt-skip" href="#kt-main">本文へスキップ</a>
+
+	<!-- ============ ヘッダー ============ -->
+	<header class="kt-header" id="kt-header">
+		<div class="kt-header__inner">
+			<a href="#kt-top" class="kt-header__logo" aria-label="環境テラス株式会社 トップへ">
+				<img src="/wp-content/uploads/2026/10/logo-kt.png" alt="環境テラス株式会社" width="450" height="286">
+				<span class="kt-header__logo-text">環境テラス株式会社</span>
+			</a>
+
+			<nav class="kt-nav" id="kt-nav" aria-label="メインメニュー">
+				<ul class="kt-nav__list">
+					<li><a class="kt-nav__link" href="#kt-top">Home</a></li>
+					<li><a class="kt-nav__link" href="#kt-business">事業内容</a></li>
+					<li><a class="kt-nav__link" href="#kt-company">会社概要</a></li>
+					<li><a class="kt-nav__link" href="#kt-contact">お問い合わせ</a></li>
+				</ul>
+				<a class="kt-tel kt-tel--nav" href="tel:0836387833">
+					<span class="kt-tel__num">0836-38-7833</span>
+					<span class="kt-tel__hours">平日9:00~17:00</span>
+				</a>
+			</nav>
+
+			<a class="kt-tel kt-tel--header" href="tel:0836387833">
+				<svg class="kt-tel__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+				<span class="kt-tel__body">
+					<span class="kt-tel__num">0836-38-7833</span>
+					<span class="kt-tel__hours">平日9:00~17:00</span>
+				</span>
+			</a>
+
+			<button class="kt-header__toggle" type="button" aria-expanded="false" aria-controls="kt-nav" aria-label="メニューを開く">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="kt-main">
+
+		<!-- ============ ファーストビュー ============ -->
+		<section class="kt-hero" id="kt-top" aria-labelledby="kt-hero-title">
+			<div class="kt-hero__media">
+				<picture>
+					<source media="(max-width: 767px)" srcset="/wp-content/uploads/2026/10/mainImgSp.png">
+					<img src="/wp-content/uploads/2026/10/mainImgPc.png" alt="" width="1366" height="768">
+				</picture>
+			</div>
+			<div class="kt-hero__body">
+				<p class="kt-hero__place"><span class="kt-nowrap">機械設備メンテナンス・</span><span class="kt-nowrap">人材教育・</span><span class="kt-nowrap">福祉用品・</span><span class="kt-nowrap">安全保護用品</span></p>
+				<h1 class="kt-hero__title" id="kt-hero-title"><span class="kt-nowrap">あしたを、</span><span class="kt-nowrap">照らす</span></h1>
+				<p class="kt-hero__lead">私たちは、確かな技術と温かい心で、<br class="kt-br-pc">人と環境に寄り添う企業として社会に貢献いたします。</p>
+				<div class="kt-hero__actions">
+					<a class="kt-btn kt-btn--primary" href="#kt-contact">お問い合わせ</a>
+					<a class="kt-btn kt-btn--ghost" href="#kt-business">事業内容</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ 新着情報 ============ -->
+		<section class="kt-section kt-news" id="kt-news" aria-labelledby="kt-news-title">
+			<div class="kt-container kt-news__inner">
+				<header class="kt-head kt-reveal">
+					<p class="kt-head__en">News</p>
+					<h2 class="kt-head__title" id="kt-news-title">新着情報</h2>
+					<p class="kt-head__lead">当社からの最新のお知らせや活動報告です。</p>
+				</header>
+				<ul class="kt-news__list kt-reveal">
+					<li class="kt-news__item">
+						<time class="kt-news__date" datetime="2025-12-16">2025年12月16日</time>
+						<a class="kt-news__link" href="https://kankyoterrace.jp/%e5%b9%b4%e6%9c%ab%e5%b9%b4%e5%a7%8b%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/">年末年始休業のお知らせ</a>
+					</li>
+					<li class="kt-news__item">
+						<time class="kt-news__date" datetime="2025-09-01">2025年9月1日</time>
+						<a class="kt-news__link" href="https://kankyoterrace.jp/%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ae%e9%81%8b%e7%94%a8%e3%82%92%e9%96%8b%e5%a7%8b%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/">ホームページの運用を開始しました。</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- ============ ごあいさつ ============ -->
+		<section class="kt-section kt-greeting" id="kt-greeting" aria-labelledby="kt-greeting-title">
+			<div class="kt-container">
+				<header class="kt-head kt-reveal">
+					<p class="kt-head__en">Message</p>
+					<h2 class="kt-head__title" id="kt-greeting-title">ごあいさつ</h2>
+					<p class="kt-head__lead">私たちの事業にかける想いと、<br>未来へのビジョンをご紹介します。</p>
+				</header>
+
+				<div class="kt-greeting__grid">
+					<p class="kt-greeting__catch kt-reveal"><span>和していく心が、</span><span>お客様とのご縁を、</span><span>働く仲間とその家族の</span><span>幸せを育んでいく。</span></p>
+
+					<div class="kt-greeting__body kt-reveal">
+						<p>環境テラス株式会社のウェブサイトへお越しいただき、心より感謝申し上げます。代表取締役の福島貴和と申します。</p>
+						<p>2018年に会社を設立して以来、私は「人と環境に寄り添う」という理念を掲げてきました。機械設備メンテナンスの仕事で培った想いから、どんなに優れた技術でも、それを使う「人」がいるからこそ価値が生まれると信じています。だからこそ、技術を磨くことと同じくらい、人との繋がりを大切にしたいと強く願ってきました。</p>
+
+						<p class="kt-greeting__value">私が何よりも大切にしているのは、<strong>和する気持ちと感謝の心</strong>です。</p>
+
+						<p>お客様、協力会社の皆様、そして毎日を共に歩む従業員たち。私たちは決して一人では仕事ができません。私を信頼し支えてくださるすべての方々を、かけがえのないご縁を通じて、共に未来を築いていく仲間だと考えています。</p>
+						<p>「社員が明るく、何よりも楽しんで仕事に取り組めること。」が私が日々願い、努めていることです。会社の成長は働く一人ひとりの幸福と密接に結びついており、社員はもちろん、そのご家族の幸せも守りたい。そんな想いが、私を突き動かす原動力です。</p>
+						<p>私たちの強みは、確かな技術力と、それ以上に人と人との繋がりを大切にする温かい心です。ぜひ皆様にお目にかかり、直接お話を伺えることを楽しみにしております。今後とも、当社をご支援賜りますよう、何卒よろしくお願い申し上げます。</p>
+
+						<p class="kt-greeting__sign">
+							<span class="kt-greeting__company">環境テラス株式会社</span>
+							<span class="kt-greeting__name"><span class="kt-greeting__role">代表取締役</span>福島貴和</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ 事業内容 ============ -->
+		<section class="kt-section kt-business" id="kt-business" aria-labelledby="kt-business-title">
+			<div class="kt-container">
+				<header class="kt-head kt-reveal">
+					<p class="kt-head__en">Business</p>
+					<h2 class="kt-head__title" id="kt-business-title">事業内容</h2>
+					<p class="kt-head__lead">お客様のビジネスと社会の発展に貢献する、<br>当社の主要事業をご紹介します。</p>
+				</header>
+
+				<div class="kt-business__list">
+					<article class="kt-biz kt-reveal">
+						<div class="kt-biz__media">
+							<img src="/wp-content/uploads/2026/10/discription_001.jpg" alt="工場の設備を点検・整備する作業員" loading="lazy" width="1100" height="733">
+						</div>
+						<div class="kt-biz__body">
+							<h3 class="kt-biz__title">機械設備メンテナンス</h3>
+							<p class="kt-biz__text">工場や施設で使われる設備の修理・メンテナンスを通じて、お客様の安定稼働と生産性向上を強力にサポート。経験豊富な専門チームが、あらゆるトラブルに迅速かつ丁寧に対応します。</p>
+						</div>
+					</article>
+
+					<article class="kt-biz kt-reveal">
+						<div class="kt-biz__media">
+							<img src="/wp-content/uploads/2026/10/discription_002.jpg" alt="研修で講師の説明を聞く受講者" loading="lazy" width="1100" height="733">
+						</div>
+						<div class="kt-biz__body">
+							<h3 class="kt-biz__title">人材教育のための教育事業</h3>
+							<p class="kt-biz__text">専門スキルアップ、リーダー育成まで、お客様のニーズに合わせた最適な研修を企画・実施し、組織全体の成長をサポートします。</p>
+						</div>
+					</article>
+
+					<article class="kt-biz kt-reveal">
+						<div class="kt-biz__media">
+							<img src="/wp-content/uploads/2026/10/discription_003.jpg" alt="車いすについて利用者に説明するスタッフ" loading="lazy" width="1100" height="733">
+						</div>
+						<div class="kt-biz__body">
+							<h3 class="kt-biz__title">介護用品及び福祉用品の販売<span class="kt-biz__sub">レンタル・リース</span></h3>
+							<p class="kt-biz__text">暮らしに寄り添い、安全で快適な毎日をサポートします。福祉用具の販売、レンタル、リースを通じて、ご本人様やご家族の負担を軽減し、より豊かな生活の実現をお手伝いします。</p>
+						</div>
+					</article>
+
+					<article class="kt-biz kt-reveal">
+						<div class="kt-biz__media">
+							<img src="/wp-content/uploads/2026/10/discription_004.jpg" alt="ヘルメットの着用を手伝う作業員と安全保護用品" loading="lazy" width="1100" height="733">
+						</div>
+						<div class="kt-biz__body">
+							<h3 class="kt-biz__title">安全保護用品の販売<span class="kt-biz__sub">レンタル・リース</span></h3>
+							<p class="kt-biz__text">作業現場の安全を守るため、安全保護用品を幅広く取り揃えています。信頼できる製品を通じて、働く人々の安心と安全を確保し、快適な作業環境づくりに貢献します。</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ 会社概要 ============ -->
+		<section class="kt-section kt-company" id="kt-company" aria-labelledby="kt-company-title">
+			<div class="kt-container">
+				<header class="kt-head kt-reveal">
+					<p class="kt-head__en">Company</p>
+					<h2 class="kt-head__title" id="kt-company-title">会社概要</h2>
+					<p class="kt-head__lead">環境テラス株式会社の基本的な情報です。</p>
+				</header>
+
+				<div class="kt-company__grid">
+					<dl class="kt-company__table kt-reveal">
+						<div class="kt-company__row">
+							<dt>会社名</dt>
+							<dd>環境テラス株式会社</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>代表取締役社長</dt>
+							<dd>福島貴和</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>設立</dt>
+							<dd>2018年11月9日</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>所在地</dt>
+							<dd>〒755-0063<br>山口県宇部市南浜町一丁目11-15</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>電話番号</dt>
+							<dd>0836-38-7833</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>営業時間</dt>
+							<dd>平日9時〜17時<br>土日祝日休み</dd>
+						</div>
+						<div class="kt-company__row">
+							<dt>事業内容</dt>
+							<dd>
+								<ul class="kt-company__biz">
+									<li>機械設備の修理及びメンテナンス事業</li>
+									<li>人材教育のための教育事業</li>
+									<li>介護用品及び福祉用品の販売・レンタル・リース</li>
+									<li>安全保護用品の販売・レンタル・リース</li>
+								</ul>
+							</dd>
+						</div>
+					</dl>
+
+					<div class="kt-company__access kt-reveal">
+						<div class="kt-map">
+							<iframe
+								title="環境テラス株式会社の所在地（Googleマップ）"
+								src="https://maps.google.com/maps?q=%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%AE%87%E9%83%A8%E5%B8%82%E5%8D%97%E6%B5%9C%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE11-15&z=16&output=embed"
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<a class="kt-btn kt-btn--ghost kt-btn--block" href="https://www.google.com/maps/search/?api=1&query=%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%AE%87%E9%83%A8%E5%B8%82%E5%8D%97%E6%B5%9C%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE11-15" target="_blank" rel="noopener noreferrer">地図アプリで開く</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ お問い合わせ ============ -->
+		<section class="kt-section kt-contact" id="kt-contact" aria-labelledby="kt-contact-title">
+			<div class="kt-container kt-contact__inner">
+				<header class="kt-head kt-head--center kt-reveal">
+					<p class="kt-head__en">Contact</p>
+					<h2 class="kt-head__title" id="kt-contact-title">お問い合わせ</h2>
+					<p class="kt-head__lead">ご質問やご相談などございましたら、<br>お気軽にお問い合わせください。</p>
+				</header>
+
+				<a class="kt-contact__tel kt-reveal" href="tel:0836387833">
+					<span class="kt-contact__tel-label">お電話でのお問い合わせ</span>
+					<span class="kt-contact__tel-num">0836-38-7833</span>
+					<span class="kt-contact__tel-hours">平日9:00~17:00</span>
+				</a>
+
+				<div id="kt-error-summary" class="kt-error" role="alert" tabindex="-1" hidden>
+					<p class="kt-error__title">入力内容をご確認ください</p>
+					<ul class="kt-error__list"></ul>
+				</div>
+
+				<form class="kt-form kt-reveal" id="kt-form" novalidate>
+					<div class="kt-form__row">
+						<label for="kt-name" class="kt-form__label">氏名<span class="kt-form__req">必須</span></label>
+						<input type="text" id="kt-name" name="name" class="kt-form__input" autocomplete="name" required>
+					</div>
+					<div class="kt-form__row">
+						<label for="kt-email" class="kt-form__label">メールアドレス<span class="kt-form__req">必須</span></label>
+						<input type="email" id="kt-email" name="email" class="kt-form__input" autocomplete="email" required>
+					</div>
+					<div class="kt-form__row">
+						<label for="kt-org" class="kt-form__label">会社名・団体名</label>
+						<input type="text" id="kt-org" name="organization" class="kt-form__input" autocomplete="organization">
+					</div>
+					<div class="kt-form__row kt-form__row--half">
+						<label for="kt-zip" class="kt-form__label">郵便番号<span class="kt-form__req">必須</span></label>
+						<input type="text" id="kt-zip" name="zip" class="kt-form__input" inputmode="numeric" autocomplete="postal-code" required>
+					</div>
+					<div class="kt-form__row">
+						<label for="kt-address" class="kt-form__label">ご住所<span class="kt-form__req">必須</span></label>
+						<input type="text" id="kt-address" name="address" class="kt-form__input" autocomplete="street-address" required>
+					</div>
+					<div class="kt-form__row kt-form__row--half">
+						<label for="kt-phone" class="kt-form__label">電話番号<span class="kt-form__req">必須</span></label>
+						<input type="tel" id="kt-phone" name="phone" class="kt-form__input" autocomplete="tel" required>
+					</div>
+					<div class="kt-form__row">
+						<label for="kt-message" class="kt-form__label">お問い合わせ内容<span class="kt-form__req">必須</span></label>
+						<textarea id="kt-message" name="message" class="kt-form__input kt-form__textarea" rows="7" required></textarea>
+					</div>
+					<div class="kt-form__submit">
+						<button type="submit" class="kt-btn kt-btn--primary kt-btn--wide">送信</button>
+					</div>
+				</form>
+
+				<p id="kt-form-message" class="kt-form__message" aria-live="polite" hidden></p>
+			</div>
+		</section>
+	</main>
+
+	<!-- ============ フッター ============ -->
+	<footer class="kt-footer">
+		<div class="kt-container kt-footer__inner">
+			<div class="kt-footer__info">
+				<p class="kt-footer__name">環境テラス株式会社</p>
+				<p class="kt-footer__addr">〒755-0063 山口県宇部市南浜町一丁目11-15</p>
+				<p class="kt-footer__addr"><a href="tel:0836387833">0836-38-7833</a>（平日9:00~17:00）</p>
+			</div>
+			<ul class="kt-footer__nav">
+				<li><a href="#kt-top">Home</a></li>
+				<li><a href="#kt-business">事業内容</a></li>
+				<li><a href="#kt-company">会社概要</a></li>
+				<li><a href="#kt-contact">お問い合わせ</a></li>
+			</ul>
+		</div>
+		<p class="kt-footer__copy"><small>&copy; 環境テラス株式会社</small></p>
+	</footer>
+
+	<?php wp_footer(); ?>
+</body>
+</html>
